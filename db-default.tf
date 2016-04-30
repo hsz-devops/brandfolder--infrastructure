@@ -33,7 +33,7 @@ resource "aws_db_instance" "default" {
     backup_retention_period = 30
 
     lifecycle {
-      prevent_destroy
+      prevent_destroy = true
     }
 
 }
